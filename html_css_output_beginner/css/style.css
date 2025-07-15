@@ -18,13 +18,13 @@
 .MyProfile {
   width: 100%;
   text-align: center;
-  padding: 80px 0;
+  padding: 70px 0;
 }
 
 .MyProfile h1 {
   display: inline-block;
   border-bottom: 2px solid #000;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .itembox {
@@ -55,13 +55,14 @@
   width: 960px;
   text-align: center;
   margin: 0 auto;
+  padding: 70px 0;
 }
 
 .Profile_photo h1 {
   display: inline-block;
   border-bottom: 2px solid #000;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .profile-items {
@@ -71,12 +72,17 @@
 }
 
 .profile-items .item h2 {
-  margin-bottom: -10px;
+  margin-bottom: 15px;
 }
 
 .profile-items .item img {
   width: 100%;
   height: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 80px;
 }
 
 p {
