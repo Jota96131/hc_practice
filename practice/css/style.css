@@ -1,0 +1,248 @@
+@charset "utf-8";
+/*PC用の設定*/
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 最初は非表示（PC向け） */
+br.sp-only {
+  display: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding: 0% 4%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  color: #ffff;
+  background-color: #384053;
+  margin-left: 100px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+  margin-top: 30px;
+  gap: 40px;
+  width: 250px;
+}
+
+.main {
+  margin: 0 calc(-50vw + 50%);
+}
+
+.main img {
+  width: 100vw;
+  height: 600px;
+  display: block;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 960px;
+  justify-content: center;
+}
+
+.MyProfile {
+  width: 100%;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.MyProfile h1 {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+}
+
+.itembox {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.profile-text h2 {
+  padding-top: 20px;
+  padding-right: auto;
+  text-align: left;
+}
+
+.profile-text p {
+  line-height: 30px;
+}
+
+.MyProfile-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.Profile_photo {
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.Profile_photo h1 {
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-items {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.profile-items .item h2 {
+  margin-bottom: 15px;
+}
+
+.profile-items .item img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer.p {
+  margin-top: 20px;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+/*スマートフォン用の設定*/
+@media screen and (max-width: 600px) {
+  br.sp-only {
+    display: inline;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .header {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .header h1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 30px;
+    gap: 30px;
+    width: 250px;
+  }
+
+  .main {
+    justify-content: center;
+  }
+
+  .main img {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    width: auto;
+    justify-content: center;
+  }
+
+  .MyProfile {
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .itembox {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile-text {
+    text-align: center;
+  }
+
+  .profile-text h2 {
+    width: auto;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+
+  .profile-text p {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .MyProfile-img img {
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Profile_photo {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .Profile_photo h1 {
+    margin-bottom: 40px;
+  }
+
+  .profile-items {
+    flex-direction: column;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile-items .item h2 {
+    margin: 25px 0;
+  }
+
+  .profile-items .item img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .full-width {
+    height: 5px;
+    background-color: black;
+  }
+}
